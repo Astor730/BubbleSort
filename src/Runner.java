@@ -1,6 +1,6 @@
 public class Runner
 {
-    public void main(String args[])
+    public static void main(String args[])
     {
         int[] big = Utility.randInt(30);
         System.out.print("Before: ");
