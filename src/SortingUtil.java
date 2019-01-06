@@ -1,4 +1,4 @@
-public class Utility
+public class SortingUtil
 {
     public static int[] randInt( int count)
     {
@@ -26,6 +26,7 @@ public class Utility
                 if(arr[i]>arr[i+1])
                 {
                     swap(arr,i,i+1);
+                    runThrough++;
                 }
             }
         }
