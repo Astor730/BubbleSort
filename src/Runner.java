@@ -14,5 +14,10 @@ public class Runner
         for(int num:big)
             System.out.print(num+" ");
         System.out.println();
+
+        long time = System.nanoTime();
+        SortingUtil.bubbleSort(SortingUtil.randInt(5));
+        time = System.nanoTime() - time;
+        System.out.println("Time Taken " + time);
     }
 }
