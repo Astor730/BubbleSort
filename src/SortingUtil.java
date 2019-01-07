@@ -31,4 +31,36 @@ public class SortingUtil
             }
         }
     }
+    public static boolean isSorted(int[] arr)
+    {
+        for(int i = 0; i<arr.length-1;i++)
+        {
+            if(arr[i]>arr[i+1])
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+    public boolean checkSum(int[]before, int[] after)
+    {
+        int x = 0;
+        int y=0;
+        for(int i = 0;i<before.length;i++)
+        {
+            x = x+before[i];
+        }
+        for(int z = 0;z<after.length;z++)
+        {
+            y = y +after[z];
+        }
+        if(x==y)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
