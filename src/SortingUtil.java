@@ -63,7 +63,7 @@ public class SortingUtil
             return false;
         }
     }
-    public static void selection(int[] arr)
+    public static void selectionSort(int[] arr)
     {
         int minPos=0;
         int minVal=0;
