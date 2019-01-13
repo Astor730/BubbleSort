@@ -19,5 +19,18 @@ public class Runner
         SortingUtil.bubbleSort(SortingUtil.randInt(5));
         time = System.nanoTime() - time;
         System.out.println("Time Taken " + time);
+
+        int[] big2 = SortingUtil.randInt(5);
+        System.out.print("Before: ");
+        for(int num:big2)
+            System.out.print(num+" ");
+        System.out.println();
+
+        SortingUtil.selectionSort(big2);
+
+        System.out.print("After: ");
+        for(int num:big2)
+            System.out.print(num+" ");
+        System.out.println();
     }
 }
